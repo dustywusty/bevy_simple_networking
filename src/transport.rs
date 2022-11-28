@@ -1,10 +1,11 @@
+use bevy_ecs::system::Resource;
 use std::{collections::VecDeque, net::SocketAddr};
 
 use super::message::Message;
 
 /// Resource serving as the owner of the queue of messages to be sent. This resource also serves
 /// as the interface for other systems to send messages.
-#[derive(Debug, Resource)]
+#[derive(Resource)]
 pub struct Transport {
     messages: VecDeque<Message>,
 }
