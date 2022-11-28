@@ -12,5 +12,6 @@ license = "Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = "0.8"
+bevy = "0.9"
+bevy_ecs = "0.9"
 bytes = "1"
